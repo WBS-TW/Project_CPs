@@ -28,11 +28,6 @@
   </url>
   
   <url>
-    <loc>/tutorials/intro-to-cps/</loc>
-    <lastmod>2020-03-02T11:40:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/publication/journal-article/</loc>
     <lastmod>2020-03-02T11:40:00+00:00</lastmod>
   </url>
@@ -64,6 +59,11 @@
   
   <url>
     <loc>/authors/wang-t/</loc>
+    <lastmod>2020-03-02T11:40:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tutorials/intro-to-cps/</loc>
     <lastmod>2020-03-02T11:40:00+00:00</lastmod>
   </url>
   

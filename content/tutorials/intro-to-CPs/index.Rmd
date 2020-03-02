@@ -20,7 +20,7 @@ summary: Intro to CPs
 tags:
 - CPs
 - intro
-title: Introduction to Chlorinated Paraffins
+title: What are chlorinated paraffins?
 
 ---
 
@@ -35,7 +35,7 @@ Chlorinated Paraffins is a group of alkanes with varying degrees of chlorine sub
 Their annual production can be seen below:
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 
-CP <- data.frame(Year = c(2015, 2016, 2017, 2018), Production = c(1000, 1100, 1200, 1300))
+CP <- data.frame(Year = c(2015, 2016, 2017, 2018), Production = c(1000000, 1100000, 1200000, 1300000))
 plot_ly(data = CP) %>% 
   add_bars(x = ~Year, y = ~Production)
 
