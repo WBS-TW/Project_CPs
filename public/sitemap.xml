@@ -13,8 +13,18 @@
   </url>
   
   <url>
-    <loc>/tags/cps-sccps/</loc>
+    <loc>/tags/cps/</loc>
     <lastmod>2020-03-02T11:40:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/distribution/</loc>
+    <lastmod>2020-03-02T11:40:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/intro/</loc>
+    <lastmod>2020-03-02T15:39:02+01:00</lastmod>
   </url>
   
   <url>
@@ -34,6 +44,11 @@
   
   <url>
     <loc>/publication/</loc>
+    <lastmod>2020-03-02T11:40:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/sccps/</loc>
     <lastmod>2020-03-02T11:40:00+00:00</lastmod>
   </url>
   
@@ -68,18 +83,8 @@
   </url>
   
   <url>
-    <loc>/tags/distribution/</loc>
-    <lastmod>2020-03-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/project/environmental-distribution/</loc>
     <lastmod>2020-03-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/intro/</loc>
-    <lastmod>2020-03-02T15:39:02+01:00</lastmod>
   </url>
   
   <url>

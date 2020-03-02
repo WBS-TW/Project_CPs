@@ -18,7 +18,8 @@ publishDate: "2020-03-02T00:00:00Z"
 slides: example
 summary: SCCPs were analyzed in pine needles, pine barks and air to investigate their levels, spatial distribution and vegetation-air partitioning coefficients.
 tags:
-- CPs SCCPs
+- SCCPs
+- distribution
 title: Levels of short chain chlorinated paraffins in pine needles and bark and their vegetation-air partitioning in urban areas
 url_code: ""
 url_dataset: ""

@@ -6,7 +6,7 @@ date: "2020-03-02T11:40:00Z"
 doi: ""
 featured: false
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/jdD8gXaTZsc)'
+  caption: ""
   focal_point: ""
   preview_only: false
 projects: [distribution]
@@ -18,7 +18,8 @@ publishDate: "2020-03-02T00:00:00Z"
 slides: example
 summary: Intro to CPs
 tags:
-- CPs SCCPs
+- CPs
+- intro
 title: Introduction to Chlorinated Paraffins
 
 ---
