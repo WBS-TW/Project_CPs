@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>distribution | Project: CPs in the indoor environment</title>
+    <link>/tags/distribution/</link>
+      <atom:link href="/tags/distribution/index.xml" rel="self" type="application/rss+xml" />
+    <description>distribution</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 02 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>distribution</title>
+      <link>/tags/distribution/</link>
+    </image>
+    
+    <item>
+      <title>Environmental distribution of CPs</title>
+      <link>/project/environmental-distribution/</link>
+      <pubDate>Mon, 02 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/project/environmental-distribution/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

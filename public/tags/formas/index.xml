@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Formas | Project: CPs in the indoor environment</title>
+    <link>/tags/formas/</link>
+      <atom:link href="/tags/formas/index.xml" rel="self" type="application/rss+xml" />
+    <description>Formas</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 02 Mar 2020 14:13:14 -0500</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Formas</title>
+      <link>/tags/formas/</link>
+    </image>
+    
+    <item>
+      <title>Introduction of the project</title>
+      <link>/post/2015-07-23-r-rmarkdown/</link>
+      <pubDate>Mon, 02 Mar 2020 14:13:14 -0500</pubDate>
+      <guid>/post/2015-07-23-r-rmarkdown/</guid>
+      <description>
+
+
+&lt;div id=&#34;welcome-to-the-project&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Welcome to the project&lt;/h2&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
