@@ -7,7 +7,7 @@ interests:
 # - Chlorinated Paraffins
 # - Nontarget and suspect screening analysis
 # - Interactive visualization of environmental data
-name: Nicholas warner
+name: Nicholas Warner
 organizations:
 - name: NILU
   url: ""
@@ -25,7 +25,7 @@ social:
 - icon: github
   icon_pack: fab
   link: https://github.com/WBS-TW
-superuser: true
+superuser: false
 user_groups:
 - Researchers
 ---

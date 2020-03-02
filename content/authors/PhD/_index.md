@@ -25,7 +25,7 @@ social:
 - icon: github
   icon_pack: fab
   link: https://github.com/WBS-TW
-superuser: true
+superuser: false
 user_groups:
 - Researchers
 ---

@@ -6,12 +6,13 @@ email: "thanh.wang@oru.se"
 interests:
 - Chlorinated Paraffins
 - Nontarget and suspect screening analysis
+- Environmental Informatics
 - Interactive visualization of environmental data
 name: Thanh Wang
 organizations:
 - name: Örebro University
   url: ""
-role: Associate Professor in Chemistry, MTM
+role: Associate Professor, MTM
 social:
 - icon: envelope
   icon_pack: fas
@@ -27,7 +28,7 @@ social:
   link: https://github.com/WBS-TW
 superuser: true
 user_groups:
-- Principal Investigators
+- Researchers
 ---
 
 Thanh Wang is an Associate Professor in Chemistry at the Man-Technology-Environment (MTM) Research Centre in Örebro University
