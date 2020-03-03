@@ -30,4 +30,3 @@ user_groups:
 - Researchers
 ---
 
-Thanh Wang is an Associate Professor in Chemistry at the Man-Technology-Environment (MTM) Research Centre in Örebro University
