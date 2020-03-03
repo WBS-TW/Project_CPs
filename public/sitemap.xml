@@ -73,18 +73,8 @@
   </url>
   
   <url>
-    <loc>/project/analytical-methods/</loc>
-    <lastmod>2020-03-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/categories/</loc>
     <lastmod>2020-03-02T15:39:02+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/project/environmental-distribution/</loc>
-    <lastmod>2020-03-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -104,6 +94,21 @@
   
   <url>
     <loc>/project/</loc>
+    <lastmod>2020-03-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/wp1/</loc>
+    <lastmod>2020-03-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/wp2/</loc>
+    <lastmod>2020-03-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/wp3/</loc>
     <lastmod>2020-03-02T00:00:00+00:00</lastmod>
   </url>
   
