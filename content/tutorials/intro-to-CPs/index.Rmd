@@ -20,7 +20,7 @@ summary: Intro to CPs
 tags:
 - CPs
 - intro
-title: What are chlorinated paraffins?
+title: 1. What are chlorinated paraffins?
 
 ---
 
