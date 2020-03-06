@@ -11,7 +11,7 @@ name: Bo Yuan
 organizations:
 - name: Stockholm University
   url: ""
-role: Researcher, SU
+role: Senior Scientist, SU
 social:
 - icon: envelope
   icon_pack: fas
