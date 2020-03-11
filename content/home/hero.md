@@ -52,6 +52,6 @@ hero_media = ""
 
 +++
 
-**A project funded by FORMAS**
+**A demo website in support to FORMAS application**
 
 
