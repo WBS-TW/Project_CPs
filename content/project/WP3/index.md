@@ -4,7 +4,7 @@ external_link: ""
 image:
   caption: https://www.sciencedirect.com/science/article/pii/S0160412016303038
   focal_point: Smart
-summary: Exposure of CPs.
+summary:
 tags:
 - distribution
 title: WP3. Assessment of the indoor sources and human exposure to CPs

@@ -5,7 +5,7 @@ image:
  caption: GC Q-EXACTIVE orbitrap HRMS, Thermo Fisher Scientific
  focal_point: Smart
 
-summary: New analytical methods for CPs.
+summary:
 tags:
 - methods
 title: WP1. Development of new and standardized analytical workflows for CPs
@@ -14,5 +14,3 @@ url_pdf: ""
 url_slides: ""
 url_video: ""
 ---
-
-**Analytical Methods for Chlorinated Paraffins**
