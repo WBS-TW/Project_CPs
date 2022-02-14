@@ -3,26 +3,56 @@
 #     desired widget in your `content/home/` folder.
 #   The weight parameter defines the order that the links will appear in.
 
-
 [[main]]
-  name = "Posts"
-  url = "#posts"
+  name = "Kursupplägg"
+  url = "/kursupplägg"
   weight = 1
 
 [[main]]
-  name = "Work packages"
-  url = "#projects"
+  name = "Programöversikt"
+  url = "/programöversikt"
   weight = 2
-
+  
 [[main]]
-  name = "Tutorials"
-  url = "#tutorials"
+  name = "Sidhänvisningar"
+  url = "/sidhänvisningar"
   weight = 3
+  
+[[main]]
+  name = "Skrivuppgift"
+  url = "/skrivuppgift"
+  weight = 4
 
 [[main]]
-  name = "Publications"
-  url = "#publications"
-  weight = 4
+  name = "Statistik"
+  url = "/statistik"
+  weight = 5
+
+[[main]]
+  name = "Repetera kemi"
+  url = "/kemirepetition"
+  weight = 6
+
+[[main]]
+  name = "Laborationer"
+  url = "/laborationer"
+  weight = 7
+  
+  
+[[main]]
+  name = "Studieteknik"
+  url = "/studieteknik"
+  weight = 8
+
+[[main]]
+  name = "Hållbarhet"
+  url = "/hallbarhet"
+  weight = 9
+  
+[[main]]
+  name = "FAQ"
+  url = "/faq"
+  weight = 10 
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.

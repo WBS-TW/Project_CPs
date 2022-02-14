@@ -5,27 +5,22 @@
 widget = "people"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
-weight = 2  # Order that this section will appear.
+weight = 3  # Order that this section will appear.
 
-title = "Team members"
+title = "Vilka är vi i introduktionskursen"
 subtitle = ""
 
 [content]
   # Choose which groups/teams of users to display.
   #   Edit `user_groups` in each user's profile to add them to one or more of these groups.
-  user_groups = ["Principal Investigators",
-                 "Researchers",
-                 "PhD students",
-                 "Administration",
-                 "Visitors",
-                 "Alumni"]
+  user_groups = ["Lärare", "Administratör"]
 
 [design]
   # Show user's social networking links? (true/false)
   show_social = false
 
   # Show user's interests? (true/false)
-  show_interests = false
+  show_interests = true
 
 [design.background]
   # Apply a background color, gradient, or image.
@@ -41,7 +36,7 @@ subtitle = ""
   # gradient_end = "SkyBlue"
   
   # Background image.
-  # image = "background.jpg"  # Name of image in `static/img/`.
+  # image = "background.jpg"  # Name of image in `static/media/`.
   # image_darken = 0.6  # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
 
   # Text color (true=light or false=dark).

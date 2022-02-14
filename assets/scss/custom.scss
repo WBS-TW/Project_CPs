@@ -1,0 +1,18 @@
+
+
+
+/* https://github.com/gcushen/hugo-academic/issues/147 */
+.container {
+   max-width: 90%;
+}
+
+.article-container{
+    max-width: none;
+}
+
+/* https://stackoverflow.com/questions/57844149/remove-max-width-from-hugo-example */
+.dropdown-menu,
+nav#navbar-main li.nav-item {
+  font-size: 14px;
+  font-weight: bold
+}

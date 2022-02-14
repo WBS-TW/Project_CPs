@@ -1,34 +1,24 @@
 ---
-authors:
-- admin
-bio: My research interests include environmental analytical chemistry.
+bio: Kursansvarig
 email: "thanh.wang@oru.se"
-interests:
-- Chlorinated Paraffins
-- Nontarget and suspect screening analysis
-- Environmental Informatics
-- Interactive visualization of environmental data
-name: Thanh Wang
+highlight_name: false
+
 organizations:
-- name: Örebro University
-  url: ""
-role: Associate Professor, MTM
+- name: MTM Research Centre
+  url: https://www.oru.se/personal/thanh_wang
+role: Lektor i kemi <br>
+ Kursansvarig
 social:
-- icon: envelope
-  icon_pack: fas
-  link: '#contact'
-- icon: twitter
+- icon: linkedin
   icon_pack: fab
-  link: https://scholar.google.com/citations?user=cJqHcqEAAAAJ&hl=sv
-- icon: google-scholar
-  icon_pack: ai
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
-- icon: github
-  icon_pack: fab
-  link: https://github.com/WBS-TW
+  link: https://se.linkedin.com/in/thanh-wang-b25044155
 superuser: true
+title: Thanh Wang
+name: Thanh Wang
+weight: 1
 user_groups:
-- Researchers
+- Kursansvarig
+- Lärare
+
 ---
 
-Thanh Wang is an Associate Professor in Chemistry at the Man-Technology-Environment (MTM) Research Centre in Örebro University
