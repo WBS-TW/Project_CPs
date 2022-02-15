@@ -8,12 +8,7 @@ active: true
 
 # tags
 tags:
-- Laboration
-- Gantt
-- Projektarbete
-- Rapport
-- Praktiska moment
-- Statistik
+- Project plan
 
 diagram: true
 math: true
