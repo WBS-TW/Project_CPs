@@ -4,55 +4,31 @@
 #   The weight parameter defines the order that the links will appear in.
 
 [[main]]
-  name = "Kursupplägg"
-  url = "/kursupplägg"
+  name = "About the project"
+  url = "/aboutproject"
   weight = 1
 
 [[main]]
-  name = "Programöversikt"
-  url = "/programöversikt"
+  name = "Posts"
+  url = "/posts"
   weight = 2
+
   
 [[main]]
-  name = "Sidhänvisningar"
-  url = "/sidhänvisningar"
+  name = "Tutorials"
+  url = "/tutorials"
   weight = 3
-  
+
 [[main]]
-  name = "Skrivuppgift"
-  url = "/skrivuppgift"
+  name = "Project results"
+  url = "/projectresults"
   weight = 4
 
-[[main]]
-  name = "Statistik"
-  url = "/statistik"
-  weight = 5
 
-[[main]]
-  name = "Repetera kemi"
-  url = "/kemirepetition"
-  weight = 6
-
-[[main]]
-  name = "Laborationer"
-  url = "/laborationer"
-  weight = 7
-  
-  
-[[main]]
-  name = "Studieteknik"
-  url = "/studieteknik"
-  weight = 8
-
-[[main]]
-  name = "Hållbarhet"
-  url = "/hallbarhet"
-  weight = 9
-  
 [[main]]
   name = "FAQ"
   url = "/faq"
-  weight = 10 
+  weight = 5
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
