@@ -4,10 +4,11 @@ email: "thanh.wang@oru.se"
 highlight_name: false
 
 organizations:
-- name: MTM Research Centre
+- name: 
   url: https://www.oru.se/personal/thanh_wang
-role: Lektor i kemi <br>
- Kursansvarig
+role: Associate Professor <br>
+ MTM Research Centre <br>
+ Örebro University
 social:
 - icon: linkedin
   icon_pack: fab
@@ -17,8 +18,8 @@ title: Thanh Wang
 name: Thanh Wang
 weight: 1
 user_groups:
-- Kursansvarig
-- Lärare
+- PI
+- Researchers
 
 ---
 

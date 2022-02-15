@@ -13,16 +13,14 @@ headless: true
 
 categories: ["R"]
 tags:
-- Analysvetenskap
-- Forensik
-- Analytisk kemi
-- Statistik
-- Miljöforensik
+- Chlorinated Paraffins
+- Indoor environment
 
 # Order that this section appears on the page.
-weight: 3
+weight: 1
 
-title: Project dissemination
+title: Holistic insights into the sources, distribution, exposure and temporal trends of chlorinated paraffins in the indoor environment
+
 subtitle: "_____"
 
 design:
@@ -34,16 +32,23 @@ design:
 #    image_position: center
 #    image_size: cover
     text_color_light: true
-    color: 'lightblue'
+    color: 'grey'
   spacing:
      padding: ["20px", "0", "20px", "0"]
 ---
-<br>
 
-# What do we want to accomplish?
+<font size="5">
 
+This is the homepage for the project.
+  
+The goals of this project are:
+  
+ </font>
+ 
+- XX
 
+- aaa **[link](https://www.oru.se/utbildning/jag-ar-student/mina-studier/blackboard-for-studenter/)** 
 
-
+- xxx
 
 
