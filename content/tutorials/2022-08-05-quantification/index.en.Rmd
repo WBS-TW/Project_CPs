@@ -37,11 +37,65 @@ The response factor can be calculated using:
 RF(C_nCl_m) = \frac{Area(C_nCl_m)}{Conc(C_nCl_m)}
 (\#eq:rf)
 \end{equation}
+  
+  
+The relative amount of $C_nCl_m$ in a $C_n$ reference standard can be described by the Gaussian distribution function:  
+  
+\begin{equation}
+\int_i(C_nCl_m|x_m,\sigma_i) = \frac{1}{\sigma_i\sqrt2\pi}\cdot e^{-(x_m-\%Cl_i)^2/2\sigma_i^2}
+(\#eq:gaussianamount)
+\end{equation}
+
+where the chlorination degree of the $C_n$ standard $i$ $(\%Cl_i)$ is the center of the peak, and the unknown variable $\sigma_i$ is the standard deviation.  
+  
+$x_m$ is the $\%Cl$ of $C_nCl_m$, which can be calculated from the molecular formula:  
+
+<!-- align multiline equations: https://stackoverflow.com/questions/70027292/how-to-left-align-a-series-of-equations-in-r-markdown -->
+  
+\begin{align}
+x_m &\ {= \%Cl(C_nH_{2n+2-m}Cl_m)}\\
+\\
+&\ {= \frac{35.45\cdot m}{12.01\cdot n + 1.008\cdot (2n+2-m) + 35.45\cdot m}}
+(\#eq:percCl1)
+\end{align}
+  
+  
+So the concentration of $C_nCl_m$ in the standard can be calculated as follows:  
+
+\begin{equation}
+concentration_i(C_nCl_m) = concentration_i(C_n) × C_nCl_m\%_i
+(\#eq:conc1)
+\end{equation}
+  
+  
+Now the $RF$ of $C_nCl_m$ in the standard $i$, or \@ref(eq:rf), can be rewritten as follows:  
+  
+
+\begin{equation}
+RF_i(C_nCl_m) = \frac{area_i(C_nCl_m)}{concentration_i(C_n)\cdot \frac{\int_i(C_nCl_m|x_m,\sigma_i)}{\sum_{1}^m \int_i(C_nCl_m|x_m,\sigma_i)}}
+
+(\#eq:rf2)
+\end{equation}
+  
+where $RF_i$ ($C_nCl_m$) only depends on the unknown $\sigma_i$.
+  
+  
+$sigma_i$ is calculated by an iterative computation. The initial value of σi is set at 0.05 in each single chain standard, which is an empirical value for fast iteration. Then $RF_i$ ($C_nCl_m$) is calculated using \@ref(eq:rf2).  
+Pairwise comparisons are made between selected RF (e.g. $C_{10}Cl_m$) of two C10 standards ($i$ and $j$) in the form of the square residual
+($SR$):  
+
+\begin{equation}
+
+SR = \left[\frac{RF_i(C_{10}Clm) - RF_j(C_{10}Cl_m)}{\frac{RF_i(C_{10}Cl_m) + RF_j(C_{10}Cl_m)}{2}}\right]^2
 
 
-
-
+(\#eq:sr)
+\end{equation}
 ```{r quant_yuanbo}
+
+# lpsolve: https://towardsdatascience.com/linear-programming-in-r-444e9c199280
+
+
 
 ```
 

@@ -38,6 +38,43 @@ math: true
 RF(C_nCl_m) = \frac{Area(C_nCl_m)}{Conc(C_nCl_m)}
 \tag{1}
 \end{equation}\]</span></p>
+<p>The relative amount of <span class="math inline">\(C_nCl_m\)</span> in a <span class="math inline">\(C_n\)</span> reference standard can be described by the Gaussian distribution function:</p>
+<p><span class="math display" id="eq:gaussianamount">\[\begin{equation}
+\int_i(C_nCl_m|x_m,\sigma_i) = \frac{1}{\sigma_i\sqrt2\pi}\cdot e^{-(x_m-\%Cl_i)^2/2\sigma_i^2}
+\tag{2}
+\end{equation}\]</span></p>
+<p>where the chlorination degree of the <span class="math inline">\(C_n\)</span> standard <span class="math inline">\(i\)</span> <span class="math inline">\((\%Cl_i)\)</span> is the center of the peak, and the unknown variable <span class="math inline">\(\sigma_i\)</span> is the standard deviation.</p>
+<p><span class="math inline">\(x_m\)</span> is the <span class="math inline">\(\%Cl\)</span> of <span class="math inline">\(C_nCl_m\)</span>, which can be calculated from the molecular formula:</p>
+<!-- align multiline equations: https://stackoverflow.com/questions/70027292/how-to-left-align-a-series-of-equations-in-r-markdown -->
+<p><span class="math display" id="eq:percCl1">\[\begin{align}
+x_m &amp;\ {= \%Cl(C_nH_{2n+2-m}Cl_m)}\\
+\\
+&amp;\ {= \frac{35.45\cdot m}{12.01\cdot n + 1.008\cdot (2n+2-m) + 35.45\cdot m}}
+\tag{3}
+\end{align}\]</span></p>
+<p>So the concentration of <span class="math inline">\(C_nCl_m\)</span> in the standard can be calculated as follows:</p>
+<p><span class="math display" id="eq:conc1">\[\begin{equation}
+concentration_i(C_nCl_m) = concentration_i(C_n) × C_nCl_m\%_i
+\tag{4}
+\end{equation}\]</span></p>
+<p>Now the <span class="math inline">\(RF\)</span> of <span class="math inline">\(C_nCl_m\)</span> in the standard <span class="math inline">\(i\)</span>, or <a href="#eq:rf">(1)</a>, can be rewritten as follows:</p>
+<p><span class="math display" id="eq:rf2">\[\begin{equation}
+RF_i(C_nCl_m) = \frac{area_i(C_nCl_m)}{concentration_i(C_n)\cdot \frac{\int_i(C_nCl_m|x_m,\sigma_i)}{\sum_{1}^m \int_i(C_nCl_m|x_m,\sigma_i)}}
+
+\tag{5}
+\end{equation}\]</span></p>
+<p>where <span class="math inline">\(RF_i\)</span> (<span class="math inline">\(C_nCl_m\)</span>) only depends on the unknown <span class="math inline">\(\sigma_i\)</span>.</p>
+<p><span class="math inline">\(sigma_i\)</span> is calculated by an iterative computation. The initial value of σi is set at 0.05 in each single chain standard, which is an empirical value for fast iteration. Then <span class="math inline">\(RF_i\)</span> (<span class="math inline">\(C_nCl_m\)</span>) is calculated using <a href="#eq:rf2">(5)</a>.<br />
+Pairwise comparisons are made between selected RF (e.g. <span class="math inline">\(C_{10}Cl_m\)</span>) of two C10 standards (<span class="math inline">\(i\)</span> and <span class="math inline">\(j\)</span>) in the form of the square residual
+(<span class="math inline">\(SR\)</span>):</p>
+<p><span class="math display" id="eq:sr">\[\begin{equation}
+
+SR = \left[\frac{RF_i(C_{10}Clm) - RF_j(C_{10}Cl_m)}{\frac{RF_i(C_{10}Cl_m) + RF_j(C_{10}Cl_m)}{2}}\right]^2
+
+
+\tag{6}
+\end{equation}\]</span></p>
+<pre class="r"><code># lpsolve: https://towardsdatascience.com/linear-programming-in-r-444e9c199280</code></pre>
 <p><br>
 <br></p>
 </div>
