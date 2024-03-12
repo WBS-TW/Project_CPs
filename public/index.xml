@@ -5,7 +5,7 @@
     <link>/</link>
       <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <description>Home</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 04 Aug 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 05 Aug 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
       <title>Home</title>
@@ -15,22 +15,62 @@
     <item>
       <title>Quantification of CPs</title>
       <link>/tutorials/quant-cps/</link>
-      <pubDate>Thu, 04 Aug 2022 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 05 Aug 2022 00:00:00 +0000</pubDate>
       <guid>/tutorials/quant-cps/</guid>
       <description>
 
 
-&lt;div id=&#34;section-the-different-quantification-methods&#34; class=&#34;section level2&#34;&gt;
+&lt;!-- https://www.christophenicault.com/post/write_post/ --&gt;
+&lt;div id=&#34;the-different-quantification-methods&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;The different quantification methods&lt;/h2&gt;
-&lt;div id=&#34;section-yuan-et-al.-quantifying-short-chain-chlorinated-paraffin-congener-groups-environ.-sci.-technol.-2017-51-1063310641&#34; class=&#34;section level3&#34;&gt;
+&lt;div id=&#34;yuan-et-al.-quantifying-short-chain-chlorinated-paraffin-congener-groups-environ.-sci.-technol.-2017-51-1063310641&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Yuan et al. Quantifying Short-Chain Chlorinated Paraffin Congener Groups (&lt;em&gt;Environ. Sci. Technol. 2017, 51, 10633−10641&lt;/em&gt;)&lt;/h3&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;RF(C_nCl_m) = &lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
+&lt;p&gt;The response factor can be calculated using:
+&lt;span class=&#34;math display&#34; id=&#34;eq:rf&#34;&gt;\[\begin{equation}
+RF(C_nCl_m) = \frac{Area(C_nCl_m)}{Conc(C_nCl_m)}
+\tag{1}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The relative amount of &lt;span class=&#34;math inline&#34;&gt;\(C_nCl_m\)&lt;/span&gt; in a &lt;span class=&#34;math inline&#34;&gt;\(C_n\)&lt;/span&gt; reference standard can be described by the Gaussian distribution function:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:gaussianamount&#34;&gt;\[\begin{equation}
+\int_i(C_nCl_m|x_m,\sigma_i) = \frac{1}{\sigma_i\sqrt2\pi}\cdot e^{-(x_m-\%Cl_i)^2/2\sigma_i^2}
+\tag{2}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;where the chlorination degree of the &lt;span class=&#34;math inline&#34;&gt;\(C_n\)&lt;/span&gt; standard &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt; &lt;span class=&#34;math inline&#34;&gt;\((\%Cl_i)\)&lt;/span&gt; is the center of the peak, and the unknown variable &lt;span class=&#34;math inline&#34;&gt;\(\sigma_i\)&lt;/span&gt; is the standard deviation.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(x_m\)&lt;/span&gt; is the &lt;span class=&#34;math inline&#34;&gt;\(\%Cl\)&lt;/span&gt; of &lt;span class=&#34;math inline&#34;&gt;\(C_nCl_m\)&lt;/span&gt;, which can be calculated from the molecular formula:&lt;/p&gt;
+&lt;!-- align multiline equations: https://stackoverflow.com/questions/70027292/how-to-left-align-a-series-of-equations-in-r-markdown --&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:percCl1&#34;&gt;\[\begin{align}
+x_m &amp;amp;\ {= \%Cl(C_nH_{2n+2-m}Cl_m)}\\
+\\
+&amp;amp;\ {= \frac{35.45\cdot m}{12.01\cdot n + 1.008\cdot (2n+2-m) + 35.45\cdot m}}
+\tag{3}
+\end{align}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;So the concentration of &lt;span class=&#34;math inline&#34;&gt;\(C_nCl_m\)&lt;/span&gt; in the standard can be calculated as follows:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:conc1&#34;&gt;\[\begin{equation}
+concentration_i(C_nCl_m) = concentration_i(C_n) × C_nCl_m\%_i
+\tag{4}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Now the &lt;span class=&#34;math inline&#34;&gt;\(RF\)&lt;/span&gt; of &lt;span class=&#34;math inline&#34;&gt;\(C_nCl_m\)&lt;/span&gt; in the standard &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt;, or &lt;a href=&#34;#eq:rf&#34;&gt;(1)&lt;/a&gt;, can be rewritten as follows:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:rf2&#34;&gt;\[\begin{equation}
+RF_i(C_nCl_m) = \frac{area_i(C_nCl_m)}{concentration_i(C_n)\cdot \frac{\int_i(C_nCl_m|x_m,\sigma_i)}{\sum_{1}^m \int_i(C_nCl_m|x_m,\sigma_i)}}
+
+\tag{5}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;where &lt;span class=&#34;math inline&#34;&gt;\(RF_i\)&lt;/span&gt; (&lt;span class=&#34;math inline&#34;&gt;\(C_nCl_m\)&lt;/span&gt;) only depends on the unknown &lt;span class=&#34;math inline&#34;&gt;\(\sigma_i\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(sigma_i\)&lt;/span&gt; is calculated by an iterative computation. The initial value of σi is set at 0.05 in each single chain standard, which is an empirical value for fast iteration. Then &lt;span class=&#34;math inline&#34;&gt;\(RF_i\)&lt;/span&gt; (&lt;span class=&#34;math inline&#34;&gt;\(C_nCl_m\)&lt;/span&gt;) is calculated using &lt;a href=&#34;#eq:rf2&#34;&gt;(5)&lt;/a&gt;.&lt;br /&gt;
+Pairwise comparisons are made between selected RF (e.g. &lt;span class=&#34;math inline&#34;&gt;\(C_{10}Cl_m\)&lt;/span&gt;) of two C10 standards (&lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(j\)&lt;/span&gt;) in the form of the square residual
+(&lt;span class=&#34;math inline&#34;&gt;\(SR\)&lt;/span&gt;):&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34; id=&#34;eq:sr&#34;&gt;\[\begin{equation}
+
+SR = \left[\frac{RF_i(C_{10}Clm) - RF_j(C_{10}Cl_m)}{\frac{RF_i(C_{10}Cl_m) + RF_j(C_{10}Cl_m)}{2}}\right]^2
+
+
+\tag{6}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# lpsolve: https://towardsdatascience.com/linear-programming-in-r-444e9c199280&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;br&gt;
 &lt;br&gt;&lt;/p&gt;
 &lt;/div&gt;
-&lt;div id=&#34;section-perkons-et-al.-the-impact-of-baking-on-chlorinated-paraffins-characterization-of-c10c17-chlorinated-paraffins-in-oven-baked-pastry-products-and-unprocessed-pastry-dough-by-hplcesiqtofms-doi.org10.1016j.foodchem.2019.125100&#34; class=&#34;section level3&#34;&gt;
+&lt;div id=&#34;perkons-et-al.-the-impact-of-baking-on-chlorinated-paraffins-characterization-of-c10c17-chlorinated-paraffins-in-oven-baked-pastry-products-and-unprocessed-pastry-dough-by-hplcesiqtofms-doi.org10.1016j.foodchem.2019.125100&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Perkons et al. The impact of baking on chlorinated paraffins: Characterization of C10–C17 chlorinated paraffins in oven-baked pastry products and unprocessed pastry dough by HPLC–ESI–Q–TOF–MS (doi.org/10.1016/j.foodchem.2019.125100)&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/ingusperkons/CP-Crawler&#34; class=&#34;uri&#34;&gt;https://github.com/ingusperkons/CP-Crawler&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
