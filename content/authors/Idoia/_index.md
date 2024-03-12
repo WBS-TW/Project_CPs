@@ -2,7 +2,7 @@
 authors:
 - admin
 bio: 
-email: "idoia.beloqui-ezquer@oru.se"
+email: "idoia.beloqui.ezquer@liu.se"
 
 title: Idoia Beloqui Ezquer
 name: Idoia Beloqui Ezquer
@@ -12,8 +12,8 @@ organizations:
   url: ""
 
 role: PhD student <br> 
-  MTM Research Centre <br>
-  Örebro University
+  IFM <br>
+  Linköping University
 superuser: false
 user_groups:
 - Researchers

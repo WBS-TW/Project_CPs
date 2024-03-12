@@ -1,14 +1,14 @@
 ---
-bio: Kursansvarig
-email: "thanh.wang@oru.se"
+bio: PI
+email: "thanh.wang@liu.se"
 highlight_name: false
 
 organizations:
 - name: 
-  url: https://www.oru.se/personal/thanh_wang
-role: Associate Professor <br>
- MTM Research Centre <br>
- Örebro University
+  url: https://liu.se/en/employee/thawa68
+role: Senior Associate Professor <br>
+ IFM <br>
+ Linköping University
 social:
 - icon: linkedin
   icon_pack: fab
